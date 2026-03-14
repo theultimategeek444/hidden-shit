@@ -33,7 +33,10 @@ body.dark {
 
 /* Header */
 .app-header {
-    background: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
+    background-image: url('space.jpg');
+    background-size: cover;
+    background-position: center;
     backdrop-filter: blur(10px);
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -43,7 +46,10 @@ body.dark {
 }
 
 body.dark .app-header {
-    background: rgba(30, 30, 30, 0.95);
+    background-color: rgba(30, 30, 30, 0.95);
+    background-image: url('space.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .header-content {
