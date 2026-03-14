@@ -2,15 +2,14 @@
   "name": "hidden-shit",
   "version": "1.0.0",
   "description": "A random joke generator app",
-  "main": "index.html",
+  "main": "app.js",
   "scripts": {
-    "start": "serve ."
+    "start": "node app.js"
   },
-  "devDependencies": {
-    "serve": "^14.2.1"
+  "dependencies": {
+    "express": "^4.18.2"
   },
   "keywords": [],
   "author": "",
   "license": "ISC"
-}</content>
-<parameter name="filePath">/home/asadiakhou/Documents/abdoufermat/hidden-shit/package.json
+}
