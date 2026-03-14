@@ -1,0 +1,16 @@
+{
+  "name": "hidden-shit",
+  "version": "1.0.0",
+  "description": "A random joke generator app",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}</content>
+<parameter name="filePath">/home/asadiakhou/Documents/abdoufermat/hidden-shit/package.json
