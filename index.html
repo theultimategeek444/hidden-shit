@@ -3,14 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Joke Generator</title>
+    <title>Shit Joke Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Random Shit Joke Generator</h1>
-        <button id="jokeButton">Get a Random Joke</button>
+    <div class="app">
+        <header class="app-header">
+            <div class="header-content">
+                <button id="themeToggle" class="theme-toggle">🌙</button>
+                <div class="title-section">
+                    <h1>💩 Shit Joke Generator 😂</h1>
+                    <p>Generate hilarious shit jokes with style!</p>
+                </div>
+            </div>
+            <nav class="nav-tabs">
+                <button id="homeTab" class="tab active">Home</button>
+                <button id="favoritesTab" class="tab">Favorites</button>
+                <button id="searchTab" class="tab">Search</button>
+            </nav>
+        </header>
+
+        <main class="app-main">
+            <section id="homeSection" class="section active">
+                <div class="controls">
+                    <select id="categorySelect" class="category-select">
+                        <option value="all">All Categories</option>
+                        <!-- Categories will be populated by JS -->
+                    </select>
+                </div>
+                <div class="joke-container">
+                    <button id="jokeButton" class="generate-btn">Generate Shit Joke</button>
+                    <div id="jokeDisplay" class="joke-display">
+                        <div id="loading" class="loading">Cooking up a joke... 🤔</div>
+                    </div>
+                    <div class="joke-actions">
+                        <button id="shareButton" class="action-btn share-btn">📤 Share</button>
+                        <button id="favoriteButton" class="action-btn fav-btn">❤️ Favorite</button>
+                        <div id="rating" class="rating">
+                            <span>Rate:</span>
+                            <div class="stars">
+                                <span class="star" data-rating="1">⭐</span>
+                                <span class="star" data-rating="2">⭐</span>
+                                <span class="star" data-rating="3">⭐</span>
+                                <span class="star" data-rating="4">⭐</span>
+                                <span class="star" data-rating="5">⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="favoritesSection" class="section">
+                <h2>Your Favorite Shit Jokes</h2>
+                <div id="favoritesList" class="favorites-list"></div>
+                <button id="clearFavorites" class="clear-btn">Clear All Favorites</button>
+            </section>
+
+            <section id="searchSection" class="section">
+                <h2>Search Jokes</h2>
+                <input type="text" id="searchJokesInput" class="search-input" placeholder="Type to search...">
+                <div id="searchResults" class="search-results"></div>
+            </section>
+        </main>
+
+        <div id="confetti" class="confetti"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
